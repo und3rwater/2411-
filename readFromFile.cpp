@@ -19,8 +19,8 @@ vector<string> readFromFile(const string& filename) {
         lines.push_back(line);
     }
     file.close();
-    for (const auto& line : lines) {
-        cout << line << endl;
-    }
+//    for (const auto& line : lines) {
+//       cout << line << endl;
+//    }
     return lines;
 }
