@@ -9,6 +9,11 @@ vector<string> readFromFile(const string& filename) {
     vector<string> lines;
     ifstream file(filename);
 
+    if (!file) {
+        cout << "no" << filename << endl;
+        return lines;
+    }
+
     string line;
     while (getline(file, line)) {
         lines.push_back(line);
